@@ -1,5 +1,5 @@
 # Bridgman Sentencing Calculator 
-=====
+
 
 ### Privacy Policy
 
