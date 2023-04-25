@@ -1,4 +1,4 @@
-Alt-H1 Bridgman Sentencing Calculator 
+# Bridgman Sentencing Calculator 
 =====
 
 ### Privacy Policy
