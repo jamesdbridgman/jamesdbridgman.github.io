@@ -15,6 +15,29 @@ const PAGE_RENDERERS = {
   about: renderAbout,
 };
 
+// ── iPhone block ─────────────────────────────────────────────────────────
+// The Bridgman app is on the App Store, so iPhone visitors are pointed
+// there instead of using the website. iPad is deliberately excluded (both
+// the classic "iPad" UA and the newer iPadOS-reports-as-Mac UA), and
+// Android is left alone since there's currently no live Play Store listing
+// to send those visitors to.
+function isIPhone() {
+  const ua = navigator.userAgent;
+  if (/iPad/i.test(ua)) return false;
+  const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  if (isIPadOS) return false;
+  return /iPhone|iPod/i.test(ua);
+}
+
+if (isIPhone()) {
+  document.getElementById('gate').hidden = true;
+  document.getElementById('mobile-block').hidden = false;
+} else {
+  initGateAndApp();
+}
+
+function initGateAndApp() {
+
 // ── Gate ─────────────────────────────────────────────────────────────────
 const gateEl = document.getElementById('gate');
 const appEl = document.getElementById('app');
@@ -75,4 +98,6 @@ function startApp() {
 
     window.scrollTo({ top: 0, behavior: 'instant' in window.scrollTo ? 'instant' : 'auto' });
   });
+}
+
 }
