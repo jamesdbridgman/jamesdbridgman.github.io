@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bridgman Sentencing Website</title>
+<link rel="icon" href="assets/icon_calculator.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─────────────────────────  GATE  ───────────────────────── -->
+  <div id="gate" class="gate">
+    <div class="gate-card">
+      <img src="assets/dog.jpg" alt="A very patient dog wrapped in a blue polka-dot blanket" class="gate-dog">
+      <h1 class="gate-title">The Bridgman Sentencing Website</h1>
+      <p class="gate-sub">This site isn't public yet. Enter the password to continue.</p>
+      <form id="gate-form" class="gate-form" autocomplete="off">
+        <input type="password" id="gate-input" class="gate-input" placeholder="Password" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="submit" class="gate-btn">Enter</button>
+      </form>
+      <p id="gate-error" class="gate-error" hidden>That's not it — try again.</p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────  APP  ───────────────────────── -->
+  <div id="app" class="app" hidden>
+
+    <header class="banner">
+      <div class="banner-inner">
+        <a href="#/calculator" class="banner-title">The Bridgman Sentencing Website</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="banner-nav" class="banner-nav">
+          <a href="#/calculator" data-route="calculator">Sentencing Calculator</a>
+          <a href="#/theorem" data-route="theorem">Bridgman Theorem</a>
+          <a href="#/guidelines" data-route="guidelines">Sentencing Guidelines</a>
+          <a href="#/warnings" data-route="warnings">Three Strikes Guide</a>
+          <a href="#/about" data-route="about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="page-title-bar" class="page-title-bar">
+      <h1 id="page-title">Bridgman Sentencing Calculator</h1>
+    </main>
+
+    <main id="content" class="content"></main>
+
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
