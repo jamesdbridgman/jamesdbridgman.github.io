@@ -6,7 +6,6 @@ import { renderWarnings } from './pages/warnings.js';
 import { renderAbout } from './pages/about.js';
 
 const PASSWORD = 'EllieMay';
-const GATE_KEY = 'bridgman_gate_ok';
 
 const PAGE_RENDERERS = {
   calculator: renderCalculator,
@@ -24,7 +23,6 @@ const gateInput = document.getElementById('gate-input');
 const gateError = document.getElementById('gate-error');
 
 function unlock() {
-  sessionStorage.setItem(GATE_KEY, '1');
   gateEl.hidden = true;
   appEl.hidden = false;
   startApp();
@@ -41,13 +39,7 @@ gateForm.addEventListener('submit', (e) => {
   }
 });
 
-if (sessionStorage.getItem(GATE_KEY) === '1') {
-  gateEl.hidden = true;
-  appEl.hidden = false;
-  startApp();
-} else {
-  gateInput.focus();
-}
+gateInput.focus();
 
 // ── App shell ────────────────────────────────────────────────────────────
 let started = false;
