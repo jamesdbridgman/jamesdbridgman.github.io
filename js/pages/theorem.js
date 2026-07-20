@@ -97,12 +97,12 @@ export function renderTheorem(container) {
   const roleSection = el('div', { class: 'section' }, [
     el('span', { class: 'sec-title', text: 'Role', style: 'display:block;margin-bottom:12px;' }),
     roleMainEl,
+    roleSlider,
     el('div', { class: 'role-category-row' }, [
       el('span', { class: 'role-category-text', text: 'Lesser', style: 'text-align:center;' }),
       el('span', { class: 'role-category-text', text: 'Significant', style: 'text-align:center;' }),
       el('span', { class: 'role-category-text', text: 'Leading', style: 'text-align:center;' }),
     ]),
-    roleSlider,
     el('div', { class: 'role-bounds' }, [
       el('span', { class: 'bound-text', text: 'Low\nLesser' }),
       el('span', { class: 'bound-text', text: 'Lesser /\nSignificant', style: 'text-align:center;' }),
