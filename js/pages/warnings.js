@@ -28,6 +28,11 @@ export function renderWarnings(container) {
     ],
   });
 
+const thanksNote = el('p', { class: 'footer-text', text: 'Special thanks to Charlotte Brook for her work.' });
+// ...
+container.appendChild(thanksNote);
+container.appendChild(footer);
+  
   const headerTitleEl = el('span', { class: 'header-title' });
   const stageBadgeWrap = el('span');
   const trailWrap = el('div');
