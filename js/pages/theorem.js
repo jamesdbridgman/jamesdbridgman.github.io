@@ -8,7 +8,7 @@ export function renderTheorem(container) {
   container.innerHTML = '';
 
   let gramsText = '';
-  let roleVal = 2;
+  let roleVal = 5;
   let conspiracyOpen = false;
   let conspGramsText = '';
   let conspCompletion = 0.5;
