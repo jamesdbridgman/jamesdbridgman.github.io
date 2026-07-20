@@ -77,7 +77,7 @@ export const FC1 = {
     },
     date: {
       q: 'Was the offence committed on or after 17 June 2025?',
-      ref: 'Sch 1AA, Pt 6, cl 19(1)',
+      ref: 'sch 1AA, pt 6, cl 19(1)',
       no: NOT_APPLY,
       yes: node('age'),
     },
@@ -89,7 +89,7 @@ export const FC1 = {
     },
     murder: {
       q: 'Is the offence murder?',
-      ref: 'ss 86O(1), 86P(1), 86R(1) & 86S(1)(a)',
+      ref: 'ss 86O(1), 86P(1), 86R(1), & 86S(1)(a)',
       yes: route('murder'),
       no: node('manslaughter'),
     },
@@ -117,13 +117,13 @@ export const FC2 = {
     },
     firstAfter2025: {
       q: 'Were any of them given on or after 17 June 2025?',
-      ref: 'Sch 1AA, Pt 6, cl 18 & cl 21(1)',
+      ref: 'sch 1AA, pt 6, cls 18 & 21(1)',
       no: node('firstOver12mo'),
       yes: node('finalOrSubsequent1'),
     },
     firstOver12mo: {
       q: "Were any of them imposed on a sentence of more than 12 months' imprisonment?",
-      ref: 's 86J & Sch 1AA, Pt 6, cl 21(2)',
+      ref: 's 86J & sch 1AA, pt 6, cl 21(2)',
       no: node('recordsFinalSub'),
       yes: node('finalOrSubsequent1'),
     },
@@ -135,13 +135,13 @@ export const FC2 = {
     },
     recordsOver12mo: {
       q: "Were any of them imposed on a sentence of more than 12 months' imprisonment?",
-      ref: 's 86J & Sch 1AA, Pt 6, cl 21(3)',
+      ref: 's 86J & sch 1AA, pt 6, cl 21(3)',
       no: stageEdge(1),
       yes: node('anotherActive'),
     },
     anotherActive: {
       q: 'Is there another such warning which was imposed for offending committed after an active final or subsequent warning?',
-      ref: 'Sch 1AA, Pt 6, cl 21(5)',
+      ref: 'sch 1AA, pt 6, cl 21(5)',
       no: stageEdge(2),
       yes: node('over2yr'),
     },
@@ -153,13 +153,13 @@ export const FC2 = {
     },
     finalAfter2025: {
       q: 'Were any of them given on or after 17 June 2025?',
-      ref: 'Sch 1AA, Pt 6, cl 18 & cl 21(1)',
+      ref: 'sch 1AA, pt 6, cls 18 & 21(1)',
       no: node('afterFirstActive'),
       yes: stageEdge(3),
     },
     afterFirstActive: {
       q: 'Were any of them imposed for offending committed after a first warning that is still active?',
-      ref: 's 86U & Sch 1AA, Pt 6, cl 21(5)(a) & (b)',
+      ref: 's 86U & sch 1AA, pt 6, cl 21(5)(a) & (b)',
       no: stageEdge(2),
       yes: node('over2yr'),
     },
@@ -301,7 +301,7 @@ export const FC5 = {
     },
     pleadedGuilty: {
       q: 'Did the defendant plead guilty?',
-      ref: 'ss 86P(2)(a) & (b) & 86S(2)(a) & (b)',
+      ref: 'ss 86P(2)(a), & (b) & 86S(2)(a) & (b)',
       yes: { 2: node('s104'), 3: term(result(
               line('The court must impose an MPI of at least 18 years unless that would be manifestly unjust.', 's 86S(2)(a)'),
               line('The court must also give the defendant a subsequent warning.', 's 86L(3)')
