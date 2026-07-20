@@ -226,7 +226,7 @@ export function renderCalculator(container) {
 
     const netMo = mitMo - aggMo;
     const netPct = Math.round(monthsToPct(netMo, sm) * 10) / 10;
-    const netSign = netMo >= 0 ? '-' : '+';
+    const netSign = netMo === 0 ? '' : (netMo > 0 ? '-' : '+');
 
     // ── capped result section ──
     capResultSection.innerHTML = '';
