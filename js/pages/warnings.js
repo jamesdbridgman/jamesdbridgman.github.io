@@ -21,6 +21,7 @@ export function renderWarnings(container) {
   const helpModal = modal({
     titleText: 'Additional consequences for certain repeated offending',
     bodyNodes: [
+      bodyParagraph('<p>Thank you very much to <a href="https://katesheppardchambers.co.nz/charlotte-brook/" target="_blank" rel="noopener noreferrer">Charlotte Brook</a> for her work. The logic and questions in this tool have been used adapted from her guide with permission.</p>'),
       bodyParagraph('This tool guides you through the "three strikes" regime re-introduced by the Sentencing (Reinstating Three Strikes) Amendment Act 2024.'),
       bodyParagraph('Answer each question as it\u2019s asked. Tap any of your previous answers above to rewind to that point and change it, use "\u2190 Back" to undo just the last answer, or the reset button to start over from the beginning.'),
       bodyParagraph("This tool operates on the basis the offending was committed after the defendant's most recent warning, if any. Refer to the Act if that is not the case."),
