@@ -485,8 +485,8 @@ button { font-family: inherit; cursor: pointer; }
 .consp-comp-label { font-size: 15px; font-weight: 500; color: var(--blue); text-align: center; margin: 4px 0; }
 .consp-bounds, .role-bounds { display: flex; justify-content: space-between; }
 .bound-text { font-size: 10px; color: var(--grey-light); line-height: 14px; white-space: pre-line; }
-.role-category-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
-.role-category-text { flex: 1; font-size: 12px; font-weight: 600; color: var(--grey-light); }
+.role-category-row { display: flex; justify-content: space-between; margin-top: 4px; margin-bottom: 4px; }
+.role-category-text { flex: 1; font-size: 13px; font-weight: 600; color: var(--grey-light); }
 
 .role-main { font-size: 18px; font-weight: 500; color: var(--blue); text-align: center; margin-bottom: 3px; }
 .role-sub { font-size: 12px; color: var(--grey); text-align: center; margin-bottom: 10px; }
