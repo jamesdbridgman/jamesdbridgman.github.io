@@ -93,7 +93,19 @@ export function renderTheorem(container) {
   // ── role section ───────────────────────────────────────────────────────
   const roleMainEl = el('div', { class: 'role-main' });
   const roleSubEl = el('div', { class: 'role-sub' });
-  const roleSlider = el('input', { class: 'slider role-slider', type: 'range', min: '1', max: '9', step: '0.5', value: '2' });
+  const roleSection = el('div', { class: 'section' }, [
+  el('span', { class: 'sec-title', text: 'Role', style: 'display:block;margin-bottom:12px;' }),
+  roleMainEl,
+  roleSubEl,
+  el('div', { class: 'role-category-row' }, [
+    el('span', { class: 'role-category-text', text: 'Lesser' }),
+    el('span', { class: 'role-category-text', text: 'Significant', style: 'text-align:center;' }),
+    el('span', { class: 'role-category-text', text: 'Leading', style: 'text-align:right;' }),
+  ]),
+  roleSlider,
+  el('div', { class: 'role-bounds' }, [ /* ...unchanged... */ ]),
+]);
+  const roleSlider = el('input', { class: 'slider role-slider', type: 'range', min: '1', max: '9', step: '0.5', value: '5' });
 
   const roleSection = el('div', { class: 'section' }, [
     el('span', { class: 'sec-title', text: 'Role', style: 'display:block;margin-bottom:12px;' }),
