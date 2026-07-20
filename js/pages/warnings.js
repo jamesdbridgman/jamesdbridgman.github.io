@@ -15,7 +15,7 @@ function thanksParagraph() {
       target: '_blank', rel: 'noopener noreferrer',
       class: 'modal-link', text: 'Charlotte Brook',
     }),
-    document.createTextNode(' for her work. The logic and questions in this tool have been used adapted from her guide with permission.'),
+    document.createTextNode(' for her work. The logic and questions in this tool have been adapted from her guide with permission.'),
   ]);
 }
 
