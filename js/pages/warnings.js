@@ -7,6 +7,18 @@ function currentFlowchart(phase, offenceType) {
   return getConsequenceFlowchart(offenceType);
 }
 
+function thanksParagraph() {
+  return el('p', { class: 'modal-body' }, [
+    document.createTextNode('Thank you very much to '),
+    el('a', {
+      href: 'https://katesheppardchambers.co.nz/charlotte-brook/',
+      target: '_blank', rel: 'noopener noreferrer',
+      class: 'modal-link', text: 'Charlotte Brook',
+    }),
+    document.createTextNode(' for her work. The logic and questions in this tool have been used adapted from her guide with permission.'),
+  ]);
+}
+
 export function renderWarnings(container) {
   container.innerHTML = '';
 
@@ -21,23 +33,19 @@ export function renderWarnings(container) {
   const helpModal = modal({
     titleText: 'Additional consequences for certain repeated offending',
     bodyNodes: [
-      bodyParagraph('<p>Thank you very much to <a href="https://katesheppardchambers.co.nz/charlotte-brook/" target="_blank" rel="noopener noreferrer">Charlotte Brook</a> for her work. The logic and questions in this tool have been used adapted from her guide with permission.</p>'),
+      thanksParagraph(),
       bodyParagraph('This tool guides you through the "three strikes" regime re-introduced by the Sentencing (Reinstating Three Strikes) Amendment Act 2024.'),
       bodyParagraph('Answer each question as it\u2019s asked. Tap any of your previous answers above to rewind to that point and change it, use "\u2190 Back" to undo just the last answer, or the reset button to start over from the beginning.'),
       bodyParagraph("This tool operates on the basis the offending was committed after the defendant's most recent warning, if any. Refer to the Act if that is not the case."),
     ],
   });
 
-const thanksNote = el('p', { class: 'footer-text', text: 'Special thanks to Charlotte Brook for her work.' });
-// ...
-container.appendChild(thanksNote);
-container.appendChild(footer);
-  
   const headerTitleEl = el('span', { class: 'header-title' });
   const stageBadgeWrap = el('span');
   const trailWrap = el('div');
   const backRowWrap = el('div');
   const mainWrap = el('div');
+  const thanksNote = el('p', { class: 'footer-text', text: 'Special thanks to Charlotte Brook for her work.' });
   const footer = el('p', { class: 'footer-text', html: 'Questions, suggestions, bugs, or comments:<br>jamesdbridgman@gmail.com' });
 
   const headerRow = el('div', { class: 'header-row' }, [
@@ -53,6 +61,7 @@ container.appendChild(footer);
   container.appendChild(trailWrap);
   container.appendChild(backRowWrap);
   container.appendChild(mainWrap);
+  container.appendChild(thanksNote);
   container.appendChild(footer);
 
   function reset() {
