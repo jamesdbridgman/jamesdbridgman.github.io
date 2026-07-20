@@ -493,6 +493,9 @@ button { font-family: inherit; cursor: pointer; }
 .empty-state { background: #fff; border-radius: var(--radius); padding: 24px; border: 0.5px solid var(--border); text-align: center; }
 .empty-text { font-size: 14px; color: var(--grey-light); }
 
+.role-category-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.role-category-text { flex: 1; font-size: 12px; font-weight: 600; color: var(--grey-light); }
+
 /* ─────────────────────────  MODAL  ───────────────────────── */
 .modal-overlay {
   position: fixed; inset: 0;
