@@ -301,7 +301,7 @@ export const FC5 = {
     },
     pleadedGuilty: {
       q: 'Did the defendant plead guilty?',
-      ref: 'ss 86P(2)(a), & (b) & 86S(2)(a) & (b)',
+      ref: 'ss 86P(2)(a) & (b), & 86S(2)(a) & (b)',
       yes: { 2: node('s104'), 3: term(result(
               line('The court must impose an MPI of at least 18 years unless that would be manifestly unjust.', 's 86S(2)(a)'),
               line('The court must also give the defendant a subsequent warning.', 's 86L(3)')
