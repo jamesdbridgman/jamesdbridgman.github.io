@@ -458,7 +458,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .toast.show { opacity: 1; }
 
-.footer-text { font-size: 11px; color: var(--grey-light); text-align: center; line-height: 16px; margin-top: 8px; }
+.footer-text { font-size: 13px; color: var(--grey-light); text-align: center; line-height: 18px; margin-top: 8px; }
 
 /* ─────────────────────────  THEOREM  ───────────────────────── */
 .field-label { font-size: 13px; color: var(--grey); margin-bottom: 4px; display: block; }
@@ -552,7 +552,7 @@ button { font-family: inherit; cursor: pointer; }
 .guideline-table td div { margin-bottom: 8px; }
 
 .section-block { margin-bottom: 6px; }
-.footer-note { font-size: 11px; color: var(--grey-light); text-align: center; line-height: 16px; margin-top: 20px; }
+.footer-note { font-size: 13px; color: var(--grey-light); text-align: center; line-height: 18px; margin-top: 20px; }
 
 /* ─────────────────────────  WARNINGS / THREE STRIKES  ───────────────────────── */
 .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
@@ -602,6 +602,7 @@ button { font-family: inherit; cursor: pointer; }
 .about-acc-body[hidden] { display: none; }
 .about-acc-body p { font-size: 14px; line-height: 22px; color: #444; margin: 0 0 10px; }
 .about-acc-body p:last-child { margin-bottom: 0; }
+.about-link { color: var(--blue); font-weight: 600; text-decoration: underline; }
 
 /* ─────────────────────────  RESPONSIVE  ───────────────────────── */
 @media (max-width: 720px) {
