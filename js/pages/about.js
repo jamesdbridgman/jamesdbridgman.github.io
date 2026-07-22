@@ -3,7 +3,7 @@ import { el } from '../ui.js';
 const SECTIONS = [
   {
     title: 'Who',
-    open: true,
+    open: false,
     body: [
       'I\u2019m James. I\u2019m a Crown Prosecutor who needs better hobbies.',
       'The App and Website are designed for New Zealand criminal law practitioners: Crown prosecutors, defence lawyers, Police prosecutors, and any one else in between.',
