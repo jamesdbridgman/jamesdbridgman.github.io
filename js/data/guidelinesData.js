@@ -84,6 +84,7 @@ export const GUIDELINES = [
           name: 'Senior v Police',
           citation: '(2000) 18 CRNZ 340 (HC)',
         },
+      },
       {
         heading: '*The first-time burglar — category 1*',
         paragraphs: [
