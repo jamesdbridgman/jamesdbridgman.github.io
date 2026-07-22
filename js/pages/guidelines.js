@@ -22,6 +22,12 @@ function paragraphNode(p) {
   return el('p', { class: classes.join(' ') }, [renderInlineParts(text)]);
 }
 
+function listNode(items) {
+  return el('ul', { class: 'case-list' }, items.map((item) => (
+    el('li', { class: 'case-list-item' }, [renderInlineParts(item)])
+  )));
+}
+
 function tableNode(table) {
   const thead = el('tr', {}, table.columns.map((c) => el('th', { text: c })));
   const rows = table.rows.map((row) => el('tr', {}, row.map((cell) => {
@@ -39,7 +45,10 @@ function sectionsBlock(sections) {
     const block = el('div', { class: 'section-block' });
     if (section.case) block.appendChild(caseHeaderNode(section.case));
     if (section.heading) block.appendChild(el('h4', { class: 'sub-heading' }, [renderInlineParts(section.heading)]));
-    (section.paragraphs || []).forEach((p) => block.appendChild(paragraphNode(p)));
+    (section.paragraphs || []).forEach((p) => {
+      const node = (typeof p === 'object' && p.list) ? listNode(p.list) : paragraphNode(p);
+      block.appendChild(node);
+    });
     if (section.table) block.appendChild(tableNode(section.table));
     frag.appendChild(block);
   });
