@@ -33,7 +33,7 @@ const SECTIONS = [
     title: 'Why',
     open: false,
     body: [
-      'I made the App and the Website to help my colleagues in the criminal justice sector, to make our lives slightly easier.',
+      'I made the App and the Website to make the lives of  my colleagues in the criminal justice sector slightly easier. It started as a an experiment and grew into a tool to help both in the office and in the courtroom.',
       'Secondly, mathematical mistakes in sentencing can result in real impacts on defendants. Small errors can mean months of a defendant\u2019s life. I like to think the App and Website may help ensure this does not happen.',
       'Why charge for the App? When I released the App in 2023 the overwhelming majority of feedback was that I should charge for it, and charge significantly more than I suggested. I have taken that feedback on board with the release of version 2.0.',
       'However, all proceeds from App purchases for the first 12 months will be matched $ for $ and donated to methamphetamine addiction therapy. Thereafter, all proceeds will continue to be donated. I am fortunate enough that the revenue from expected downloads would not change my life. But, as any criminal practitioner knows, methamphetamine has devastated New Zealand. If the money generated from this App can help one person in their recovery then the work has been worth it.',
