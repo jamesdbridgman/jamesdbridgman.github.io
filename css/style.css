@@ -555,6 +555,16 @@ button { font-family: inherit; cursor: pointer; }
 .section-block { margin-bottom: 6px; }
 .footer-note { font-size: 13px; color: var(--grey-light); text-align: center; line-height: 18px; margin-top: 20px; }
 
+.case-list {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.case-list-item {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
 /* ─────────────────────────  WARNINGS / THREE STRIKES  ───────────────────────── */
 .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
 .header-left { display: flex; align-items: center; flex-wrap: wrap; }
