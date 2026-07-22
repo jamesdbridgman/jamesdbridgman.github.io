@@ -561,8 +561,11 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .case-list-item {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--ink);
+  text-align: justify;
   margin-bottom: 8px;
-  line-height: 1.5;
 }
 
 /* ─────────────────────────  WARNINGS / THREE STRIKES  ───────────────────────── */
