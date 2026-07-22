@@ -35,7 +35,7 @@ export function renderTheorem(container) {
     bodyNodes: [
       el('h2', { class: 'modal-title-lg', text: 'Predictability and objectivity in methamphetamine sentencing.' }),
       bodyParagraph('Part submission-checking tool, part thought experiment.'),
-      bodyParagraph('Starting points under *R v Zhang* balance role and quantity. The Bridgman Theorem does this mathematically, taking away the guesswork and keeping starting points in line with precedent.'),
+      bodyParagraph('Starting points under *Zhang v R* balance role and quantity. The Bridgman Theorem does this mathematically, taking away the guesswork and keeping starting points in line with precedent.'),
       bodyParagraph("The Theorem works by taking the average of the positions of a defendant's quantity and role within a starting point band to determine the starting point."),
       bodyParagraph("For example, take a defendant with 50g of methamphetamine and a role on the border of Lesser and Significant. 50g places the offending in Band Two (5 – 250g) which has a starting point range of 2 to 9 years. 50g is approximately 20% of the way along the quantity spectrum of Band 2. The border of Lesser and Significant is 33% of the way along the spectrum of Lesser - Significant - Leading. The average of these two values is 26.5%. 26.5% of the of the starting point range (2 - 9 years) is 3 years and 10 months' imprisonment."),
       bodyParagraph("However, research shows that actual sentences imposed differ from a strict application of *Zhang*. This is taken into account and starting points are adjusted by the average deviation of 16.8%. Adjusted for this research, the above example would result in a more realistic starting point of 3 years and 4 months' imprisonment."),
