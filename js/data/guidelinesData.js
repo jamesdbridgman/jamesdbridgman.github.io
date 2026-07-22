@@ -477,8 +477,8 @@ export const GUIDELINES = [
             heading: 'Rape band one: 6–8 years',
             paragraphs: [
               '[93] This band will be appropriate for offending at the lower end of the spectrum; that is, offending where the aggravating features are either not present or present to a limited extent. Rape band one is not an appropriate band for offending where the level of violence is serious, the case involves an extended abduction, a victim who by reason of factors such as age (children or elderly persons) or mental or physical impairment is vulnerable or an offender acts in concert with others. Where none of the factors referred to above at [37] to [52] which increase the seriousness of the offending are present a starting point at the bottom end of this band would be appropriate. Where one or more of these factors is present to a low or moderate degree, a higher starting point within the band would be required.',
-              'EXAMPLES OF CASES WITH STARTING POINTS AT THE LOWER END OF RAPE BAND ONE:'
-              {,
+              'EXAMPLES OF CASES WITH STARTING POINTS AT THE LOWER END OF RAPE BAND ONE:',
+              {
                 list: [
                 '*R v Murphy*: O had been drinking and came home at dawn to find a man and a woman whom he did not know asleep in his bed. O tried to wake them and asked them to leave. The male did so. The female, V, said she woke to find a man attempting to have sexual intercourse with her. She said she thought it was the man who left the room (the two having met the previous evening) and sexual intercourse took place. When V got up and could see the man in bed she realised it was O and left the room and made her complaint.',
                 '*R v Pehi*: O and V were in a relationship for about six months. After some kissing in the early hours one morning in V’s bedroom, O, by then extremely drunk, assaulted V and then engaged in non-consensual activity culminating in rape. V was annoyed with O but said she would have been willing nonetheless to have sex with O that night.',
